@@ -12,7 +12,7 @@ import java.util.List;
 
 public class AviaryServiceImpl implements AviaryService {
 
-    private final int AVIARIES_COUNT = 3;
+    private static final int AVIARIES_COUNT = 3;
 
     private final AviaryFactory aviaryFactory = new AviaryFactory();
     private final DogFactory dogFactory = new DogFactory();

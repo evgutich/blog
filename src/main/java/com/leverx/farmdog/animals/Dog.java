@@ -47,7 +47,7 @@ public class Dog {
     }
 
     public boolean isTrained() {
-        return experience > 110;
+        return experience > 100;
     }
 
     public void doWork(Work work) {

@@ -11,7 +11,6 @@ import com.leverx.blog.repository.ArticleRepository;
 import com.leverx.blog.repository.CommentRepository;
 import com.leverx.blog.repository.UserRepository;
 import com.leverx.blog.service.CommentService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -30,19 +29,6 @@ public class CommentServiceImpl implements CommentService {
         this.articleRepository = articleRepository;
         this.userRepository = userRepository;
     }
-
-    //    ArticleRepository articleRepository;
-
-//    public CommentServiceImpl(CommentRepository commentRepository, ArticleRepository articleRepository) {
-//        this.commentRepository = commentRepository;
-//        this.articleRepository = articleRepository;
-//    }
-
-//    @Override
-//    public Comment addCommentByArticleId(Long id) {
-//        Optional<Article> article = articleRepository.findById(id);
-//        return commentRepository.save();
-//    }
 
     @Override
     public CommentDto createComment(CommentDto comment, Long articleId) {

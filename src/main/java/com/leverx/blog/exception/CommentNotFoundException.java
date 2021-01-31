@@ -1,4 +1,4 @@
 package com.leverx.blog.exception;
 
-public class CommentNotFoundException extends RuntimeException{
+public class CommentNotFoundException extends RuntimeException {
 }

@@ -1,9 +1,7 @@
 package com.leverx.blog.controller;
 
 import com.leverx.blog.dto.ArticleDto;
-import com.leverx.blog.exception.InsufficientPermissionException;
 import com.leverx.blog.service.ArticleService;
-import com.leverx.blog.service.SecurityService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Set;

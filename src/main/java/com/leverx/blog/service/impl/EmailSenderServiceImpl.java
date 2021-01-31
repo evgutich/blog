@@ -4,9 +4,7 @@ import com.leverx.blog.model.ConfirmationToken;
 import com.leverx.blog.model.User;
 import com.leverx.blog.repository.ConfirmationTokenRepository;
 import com.leverx.blog.service.EmailSenderService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.mail.SimpleMailMessage;
-import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.JavaMailSenderImpl;
 import org.springframework.stereotype.Service;
 
@@ -15,11 +13,9 @@ import java.util.Properties;
 @Service
 public class EmailSenderServiceImpl implements EmailSenderService {
 
-    private final JavaMailSender javaMailSender;
     private final ConfirmationTokenRepository confirmationTokenRepository;
 
-    public EmailSenderServiceImpl(JavaMailSender javaMailSender, ConfirmationTokenRepository confirmationTokenRepository) {
-        this.javaMailSender = javaMailSender;
+    public EmailSenderServiceImpl(ConfirmationTokenRepository confirmationTokenRepository) {
         this.confirmationTokenRepository = confirmationTokenRepository;
     }
 

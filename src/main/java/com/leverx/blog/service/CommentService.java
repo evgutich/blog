@@ -6,7 +6,6 @@ import com.leverx.blog.model.Comment;
 import java.util.List;
 
 public interface CommentService {
-//    Comment addCommentByArticleId(Long id);
 
     CommentDto createComment(CommentDto comment, Long articleId);
 

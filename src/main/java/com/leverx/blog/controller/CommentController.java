@@ -15,8 +15,7 @@ public class CommentController {
     }
 
     @PostMapping
-    public CommentDto createComment(@RequestBody CommentDto comment,
-                                    @PathVariable Long articleId) {
+    public CommentDto createComment(@RequestBody CommentDto comment, @PathVariable Long articleId) {
         commentService.createComment(comment, articleId);
         return comment;
     }
